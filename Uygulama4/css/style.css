@@ -1,0 +1,31 @@
+.container{
+    border: 1px black solid;
+    border-radius: 20px;
+    background-color: black;
+    width: 80%;
+    height: 600px;
+    margin: 20px auto;
+}
+.logo{
+    color: white;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5px;
+}
+.flex-box{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+.box{
+    width: 300px;
+    min-height: 400px;
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 10px;
+    margin: 15px 20px;
+}
+.flex-box .box img{
+    width: 200px;
+}
