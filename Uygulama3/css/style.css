@@ -1,0 +1,40 @@
+
+.logo{
+    text-align: center;
+    border: 1px black solid;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: azure;
+}
+a{
+    color: black;
+    background-color: azure;
+    border: 1px solid black;
+    border-radius: 3px 3px 0 0;
+    padding: 3px;
+    text-decoration: none;
+    margin: 3px;
+}
+.flex-box{
+    width: auto;
+    height: auto;
+    border:1px black solid;
+    background-color: azure;
+    border-radius: 5px;  
+    display: flex;  
+    flex-direction: row;
+    
+}
+.sub-box{
+    width: 150px;
+    padding: 3px;
+    text-align: justify;
+    border: 1px black solid;
+    border-radius: 3px;
+    background-color: aquamarine;
+    margin: 10px;
+}
+img{
+    width: 80%;
+    margin: 3px;
+}
