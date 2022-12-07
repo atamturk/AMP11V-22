@@ -1,0 +1,47 @@
+body {
+	color: #6F6F6D;
+	font-family: Georgia;
+	font-size: 10px; }
+
+#container {
+	width: 580px; 
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border: 1px solid #e2e2e2;
+	background: #F5F5F5;
+	margin: 10px;
+	}
+
+#resimdiv {
+	width: 400px;
+	background-color: #91918E;
+	
+	}
+	
+#resimdiv img {
+	width: 400px;
+	height: 300px;
+	border: 2px solid #e2e2e2;	
+	}
+
+#thumb {
+	margin-top: 15px; 
+	}
+
+#thumb img {
+	width: 100px;
+	height: 75px;
+	border: 2px solid #e2e2e2; 
+	}
+#sol-ok{
+position: relative;
+top: -155px;
+left: -250px;
+z-index: 3;
+}
+#sag-ok{
+	position: relative;
+	top: -180px;
+	right: -250px;
+	z-index: 3;
+}

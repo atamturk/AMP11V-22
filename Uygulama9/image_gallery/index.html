@@ -1,0 +1,68 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1254" />
+<title>Javascript resim scripti</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript">
+	var index = 1;
+function myResim(yol,indis){
+	
+	// document.myresim.src =  ""+ aydi +"";	
+	index  = indis;
+	document.getElementById("resimdiv").innerHTML = "<img name=\"myresim\" src=\""+ yol +"\" />";
+}
+
+function solaGit() {
+	
+	if (index > 1) {
+		index--;
+		document.getElementById("resimdiv").innerHTML = "<img src='images/" +  index  + ".jpg'/>";
+		console.log(index);
+	}
+}
+
+function sagaGit() {
+	
+	if (index < 5) {
+		index++;
+		document.getElementById("resimdiv").innerHTML = "<img src='images/" +  index  + ".jpg'/>";
+		
+	}
+	
+}
+
+</script>
+<link rel="stylesheet" type="text/css" href="css/style.css"> 
+</head>
+
+<body>
+
+<center>
+	
+	
+	<div id="container" align="center">
+		
+		<div id="resimdiv" name="resimdiv">
+		<img name="myresim" src="images/1.jpg" />
+		</div>
+		<div id="sol-ok">
+			<a href="#" onclick="solaGit()"><i class="fa fa-chevron-left" style="font-size:25px;" aria-hidden="true"></i></a>
+		</div>
+		<div id="sag-ok">
+			<a href="#" onclick="sagaGit()"><i class="fa fa-chevron-right" style="font-size:25px;" aria-hidden="true"></i></a>
+		</div>
+		<div id="thumb">
+		 <a href="#" onmouseover="myResim('images/1.jpg',1);"><img src="images/resim1.jpg" width="100" /></a>
+		 <a href="#" onmouseover="myResim('images/2.jpg',2);"><img src="images/resim2.jpg" width="100" /></a>
+		 <a href="#" onmouseover="myResim('images/3.jpg',3);"><img src="images/resim3.jpg" width="100" /></a>
+		 <a href="#" onmouseover="myResim('images/4.jpg',4);"><img src="images/resim4.jpg" width="100" /></a>
+		 <a href="#" onmouseover="myResim('images/5.jpg',5);"><img src="images/resim5.jpg" width="100" /></a>
+
+		</div>
+		
+	</div>
+		
+		
+	</center>
+</body>
+</html>
