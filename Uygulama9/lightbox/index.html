@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
 </head>
-<body>
+<body onload="modalGoster()">
     <div class="modal" id="myModal">
         <span class="close cursor" onclick="closeModal()">&times;</span>
     </div>
     
-        <input type="button" onclick="modalGoster()" value="Göster">
+     <input type="button" onclick="mesajGoster()" value="Göster">
+
+     <div id="goster"></div>
 
 </body>
 </html>
