@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Uygulama1.Models.OgrenciModel>
+@{
+    ViewData["Title"] = "Liste";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@foreach (var item in Model)
+{
+    <div class="col-3 mx-auto">
+        <center>
+            <div class="card">
+            <div class="card-body">
+                Numara: <b>@item.Number</b> <br>
+                Ad : <b>@item.Name</b> <br>
+                Soyad: <b>@item.Surname</b> <br>
+                Sınıf : <b>@item.ClassName</b> <br>
+                </div>
+            </div>
+        </center>
+    </div>    
+}

@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Uygulama1.Models.DataModel>;
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+
+    @foreach (var item in Model)
+    {
+
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="@item.Image" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">@item.Title</h5>
+                    <p class="card-text">@item.Description</p>
+                    <a href="#" class="btn btn-primary">Detay</a>
+                </div>
+            </div>
+        </div>
+
+    }
+</div>
+
+
+
